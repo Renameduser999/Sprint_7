@@ -1,0 +1,75 @@
+# Created at 2025-02-07T17:58:32.863
+java.lang.RuntimeException: The aspect weaver cannot determine any valid method to define auxiliary classes in arbitrary class loaders. Aspect weaving will *not* work, and you will see subsequent errors. Please search for corresponding issues at https://github.com/eclipse-aspectj/aspectj/issues. If there are none, please create a new one.
+
+# Created at 2025-02-07T17:58:32.863
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.<clinit>(ClassLoaderWeavingAdaptor.java:1043)
+
+# Created at 2025-02-07T17:58:32.863
+	at org.aspectj.weaver.loadtime.Aj.<clinit>(Aj.java:267)
+
+# Created at 2025-02-07T17:58:32.886
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.<clinit>(ClassPreProcessorAgentAdapter.java:27)
+
+# Created at 2025-02-07T17:58:32.887
+	at org.aspectj.weaver.loadtime.Agent.<clinit>(Agent.java:34)
+
+# Created at 2025-02-07T17:58:32.887
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+
+# Created at 2025-02-07T17:58:32.888
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1161)
+
+# Created at 2025-02-07T17:58:32.889
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:340)
+
+# Created at 2025-02-07T17:58:32.889
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newMethodAccessor(MethodHandleAccessorFactory.java:71)
+
+# Created at 2025-02-07T17:58:32.889
+	at java.base/jdk.internal.reflect.ReflectionFactory.newMethodAccessor(ReflectionFactory.java:154)
+
+# Created at 2025-02-07T17:58:32.889
+	at java.base/java.lang.reflect.Method.acquireMethodAccessor(Method.java:726)
+
+# Created at 2025-02-07T17:58:32.890
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+
+# Created at 2025-02-07T17:58:32.890
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+
+# Created at 2025-02-07T17:58:32.890
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+# Created at 2025-02-07T17:58:32.890
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 67
+
+# Created at 2025-02-07T17:58:32.890
+	at aj.org.objectweb.asm.ClassReader.<init>(ClassReader.java:200)
+
+# Created at 2025-02-07T17:58:32.892
+	at aj.org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+
+# Created at 2025-02-07T17:58:32.892
+	at aj.org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+
+# Created at 2025-02-07T17:58:32.892
+	at aj.org.objectweb.asm.ClassReader.<init>(ClassReader.java:288)
+
+# Created at 2025-02-07T17:58:32.892
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.getMirrorClassBytes(ClassLoaderWeavingAdaptor.java:1180)
+
+# Created at 2025-02-07T17:58:32.892
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.getMirrorClass(ClassLoaderWeavingAdaptor.java:1166)
+
+# Created at 2025-02-07T17:58:32.893
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.getAccessibleObjectOverrideOffset(ClassLoaderWeavingAdaptor.java:1128)
+
+# Created at 2025-02-07T17:58:32.893
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.createDefineClassMethodHandle(ClassLoaderWeavingAdaptor.java:1100)
+
+# Created at 2025-02-07T17:58:32.894
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.<clinit>(ClassLoaderWeavingAdaptor.java:1040)
+
+# Created at 2025-02-07T17:58:32.894
+	... 12 more
+
