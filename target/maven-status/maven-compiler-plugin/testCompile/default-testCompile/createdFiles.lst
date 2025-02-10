@@ -1,0 +1,6 @@
+courier\creation\NegativeTest.class
+courier\login\PositiveTest.class
+order\TestMakeOrder.class
+order\TestListOrders.class
+courier\creation\PositiveTest.class
+courier\login\NegativeTest.class
