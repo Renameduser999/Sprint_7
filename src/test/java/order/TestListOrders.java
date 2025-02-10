@@ -7,6 +7,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.apache.http.HttpStatus.*;
+import static org.hamcrest.CoreMatchers.hasItems;
+import static org.hamcrest.CoreMatchers.notNullValue;
 import static params.OrderApi.listOrders;
 
 public class TestListOrders extends BaseTest {
@@ -23,6 +25,7 @@ public class TestListOrders extends BaseTest {
     public void testListOrders() {
         Response response = listOrders();
         response
-                .then().statusCode(SC_OK);
+                .then().statusCode(SC_OK).assertThat().body("orders.status", hasItems(0));
     }
 }
+
